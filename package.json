@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build",
+    "prebuild": "rm -rf dist/*",
+    "build": "parcel build --public-url ./",
     "clean": "rm -rf dist/ node_modules/ package-lock.json .parcel-cache",
     "clean:cache": "rm -rf .parcel-cache"
   },
