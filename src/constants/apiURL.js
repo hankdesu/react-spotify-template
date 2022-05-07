@@ -1,0 +1,22 @@
+export const ACCOUNTS = 'https://accounts.spotify.com';
+export const ACCOUNTS_AUTHORIZE = `${ACCOUNTS}/authorize`;
+export const ACCOUNTS_API_TOKEN = '/api/token';
+
+export const WEB_API = 'https://api.spotify.com/v1';
+export const ME = '/me';
+export const USERS = '/users';
+export const PLAYER = '/player';
+export const TRACKS = '/tracks';
+export const PLAYLISTS = '/playlists';
+export const BROWSE = '/browse';
+export const RECOMMENDATIONS = '/recommendations';
+export const ME_TOP = `${ME}/top`;
+export const RECENTLY_PLAYED = `${ME}${PLAYER}/recently-played`;
+export const USER_TRACKS = `${ME}${TRACKS}`;
+export const BROWSE_NEW_RELEASE = `${BROWSE}/new-releases`;
+export const AVAILABLE_GENRE_SEEDS = `${RECOMMENDATIONS}/available-genre-seeds`;
+export const ME_PLAYER = `${ME}${PLAYER}`;
+export const PLAYER_PLAY = `${ME}${PLAYER}/play`;
+export const PLAYER_PAUSE = `${ME}${PLAYER}/pause`;
+export const PLAYER_CURRENT_PLAYING = `${ME}${PLAYER}/currently-playing`;
+export const PLAYER_DEVICES = `${ME}${PLAYER}/devices`;
