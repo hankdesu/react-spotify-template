@@ -20,7 +20,7 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouter basename="/react-spotify-template">
+      <HashRouter>
         <AppRouter />
       </HashRouter>
       {/* <ReactQueryDevtools /> */}
