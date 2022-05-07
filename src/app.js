@@ -1,6 +1,6 @@
 import React from 'react';
 import * as ReactDOMClient from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { QueryClientProvider, QueryClient } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
@@ -20,9 +20,9 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter basename="/react-spotify-template">
+      <HashRouter basename="/react-spotify-template">
         <AppRouter />
-      </BrowserRouter>
+      </HashRouter>
       {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   );
