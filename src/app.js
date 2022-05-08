@@ -20,9 +20,9 @@ const queryClient = new QueryClient({
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <HashRouter>
+      <BrowserRouter>
         <AppRouter />
-      </HashRouter>
+      </BrowserRouter>
       {/* <ReactQueryDevtools /> */}
     </QueryClientProvider>
   );
